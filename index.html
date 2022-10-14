@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> RIANO JEWELS</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/all.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+   <style>
+    body{height: 1200PX;
+    overflow-x: hidden;}
+    .container-fluid{ border-bottom: 2px solid rgb(155, 114, 33);
+    height: 160px;
+  position: fixed;
+z-index: 5;
+background-color: rgba(255, 255, 255, 0.681);}
+    .justify-content-center li a{color:rgb(156, 107, 46);
+    margin:10px 5px;}
+    .img-c{width:90px;
+    height: 80px;
+  background-image:url(./images/133333.png) !important;
+background-size: cover;
+margin:2PX auto;
+background-position:center;}
+.RIA{font:normal BOLD 15PX 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ text-align: center;
+color:rgba(82, 77, 65, 0.627) ;}
+.nav .LI-ICONS{margin-left: -150PX;
+padding-left: -50PX;}
+.card{height:68VH;
+margin: 0 15px;
+border: 0;}
+.btn-primary{margin-left:50%!important;
+transform: translate(-50%);
+background-color: rgb(156, 107, 46);
+border: 0;
+width: 200px;}
+.btn-primary:hover{background-color:rgba(82, 77, 65, 0.627) ;}
+.container{display: flex;
+top:150px}
+.card-title{font-size:18px;
+  color:rgb(156, 107, 46);
+position:relative!important;}
+  .card-text{font:normal bold 15px 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;} 
+  .offcanvas{border-bottom: 2px solid  rgb(155, 114, 33)!important;
+  /* height:80vh;  */
+width: 25vw;
+position: absolute;
+color:  rgb(155, 114, 33);
+
+background-color:rgb(244, 244, 244)  ;
+padding: 30px;
+position: fixed;}
+.pos{position: relative;}
+#total-price{text-align: center !important;
+position: absolute;
+left: 50%;
+transform: translate(-50%);
+top:85%;
+width: 150px;
+}
+.main{position: relative;
+}
+.all{position: absolute;
+top:100px;
+left: 50%;
+transform:translate(-50%);}
+.offcanvas-title{font:normal bold 25px 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color: rgba(82, 77, 65, 0.836);}
+
+
+
+.last-s{margin-top: -120px;}
+.last-div-parent{width:100vw;
+height:10vw;
+background-color:   rgba(255, 255, 255, 0.681);
+border-top:2px solid   rgb(155, 114, 33) ;}
+/* .arch-last{width:15vw;
+height:90%;
+background-color:rgba(134, 106, 86, 0.134);
+border-radius:0 0 50% 50%;
+margin-left: 200px;} */
+.last-text,.last-icons{text-align: center;
+font:bold 38px 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+margin-top:;
+color:#644629;}
+.last-icons a{color:#644629;padding: 10px;}
+.line-last{width:10vw;
+height: 3px;
+margin: auto;
+background-color: #644629;}
+.last-icons{margin-top: 60px;
+font-size: 28px;}
+.c-r,.c-d{font:12px 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding:0 20px; }
+    .c-r a,.c-d a{text-decoration: none;
+    color:#644629;}
+    .a-l-2{height: 230px;
+    position: absolute;
+top:-40px}
+    .last-foot{position: relative;
+    top:1200px}
+
+    </style>
+
+</head>
+<body>
+  <div class="container-fluid shadow ">
+    <div class="img-c"></div>
+     <H2 class="RIA">RIANO JEWELS</H2>
+
+    <ul class="nav justify-content-center">
+      <li class="nav-item LI-ICONS">
+        <li class="nav-item">
+          <a class="nav-link pos" href="#"> <i class="fas fa-shopping-bag" style="font-size:24px">
+            <small id="count-cart">0</small>
+            <div class="offcanvas offcanvas-start shadow lg"  id="demo" >
+              <div class="offcanvas-header">
+                <h1 class="offcanvas-title">your products</h1>
+                <hr>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+              </div>
+              <div class="offcanvas-body">
+                <!-- <p>Some text lorem ipsum.</p>
+                <p>Some text lorem ipsum.</p>
+                <p>Some text lorem ipsum.</p> -->
+                <div id="total-price"> Total price:</div>
+
+                <!-- <button class="btn btn-secondary  price-js" type="button" id="show-price" >A Button</button> -->
+              </div>
+            </div>
+          </i> </a>
+        </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="far fa-user"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fas fa-map-marker-alt"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+        
+      </li>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Instyle</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"> Miss L'</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Diamonds</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Chains</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">New in</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Gifts</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Shop All</a>
+      </li>
+    </ul>
+  </div>
+
+  <main>
+    <div class="all">
+  <div class="container">
+    <div class="container mt-3">
+        <div class="card" style="width:300px">
+          <img class="card-img-top" src="./images/112051400252451.png" alt="Card image" style="width:100%">
+          <div class="card-body">
+            <!-- <h4 class="card-title" >Colored stones necklace</h4> -->
+            <p class="card-text">EGP 3,000</p>
+            <button  price="3000"  href="" class="btn btn-primary" style="text-align:center !important" id="addcart">Colored stones necklace</button>
+          </div>
+        </div>
+    </div>
+    <div class="container mt-3">
+      <div class="card" style="width:300px">
+        <img class="card-img-top" src="./images/21046130023_2_1_4.jpg" alt="Card image" style="width:100%">
+        <div class="card-body">
+          <!-- <h4 class="card-title">Interlocked circles necklace</h4> -->
+          <p class="card-text">EGP 2,450</p>
+          <button price="2450" href="" class="btn btn-primary" style="text-align:center !important" id="addcart">Interlocked circles necklace</button>
+        </div>
+      </div>
+  </div>
+  <div class="container mt-3">
+    <div class="card" style="width:300px">
+      <img class="card-img-top" src="./images/112051101252451-1.png" alt="Card image" style="width:100%">
+      <div class="card-body">
+        <!-- <h4 class="card-title">Stones necklace</h4> -->
+        <p class="card-text">EGP 2.800</p>
+        <button price="2800"  href="" class="btn btn-primary" style="text-align:center !important" id="addcart">Stones necklace</button>
+      </div>
+    </div>
+   </div>
+ </div>
+
+
+ <div class="container">
+  <div class="container mt-3">
+      <div class="card" style="width:300px">
+        <img class="card-img-top" src="./images/111051100992421.png" alt="Card image" style="width:100%">
+        <div class="card-body">
+          <!-- <h4 class="card-title" >Crescent & stars necklace</h4> -->
+          <p class="card-text">EGP 2.300</p>
+          <button  price="2300" href="" class="btn btn-primary" style="text-align:center !important" id="addcart">Crescent & stars necklace</button>
+        </div>
+      </div>
+  </div>
+  <div class="container mt-3">
+    <div class="card" style="width:300px">
+      <img class="card-img-top" src="./images/111051401362420-1.png" alt="Card image" style="width:100%">
+      <div class="card-body">
+        <!-- <h4 class="card-title">Butterfly necklace</h4> -->
+        <p class="card-text">EGP3,500</p>
+        <button price="3500"  href="" class="btn btn-primary" style="text-align:center !important" id="addcart">Butterfly necklace</button>
+      </div>
+    </div>
+</div>
+<div class="container mt-3">
+  <div class="card" style="width:300px">
+    <img class="card-img-top" src="./images/ddwdwdw.png" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <!-- <h4 class="card-title">Crescent stones necklace</h4> -->
+      <p class="card-text">EGP 2,450</p>
+      <button price="2450"  href="" class="btn btn-primary" style="text-align:center !important" id="addcart">Crescent stones necklace</button>
+    </div>
+  </div>
+ </div>
+</div>
+<div class="">
+  <button class="btn btn-primary bt-js" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo" >
+    Show my cart
+  </button>
+</div>
+</div>
+
+</main>
+
+
+
+<footer class="last-foot">
+  <div class="last-div-parent">
+      <div class="arch-last"></div>
+      <div class="last-text">connect us</div>
+      <div class="line-last"></div>
+      <div class="last-icons">
+          <a href="#" class="li-c"><i class="fab fa-facebook-square"></i></a></li>
+          <a href="#" class="li-c"><i class="fab fa-instagram-square"></i></a>
+          <a href="#" class="li-c"><i class="fab fa-pinterest"></i></a>
+          <a href="#" class="li-c"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="c-r">
+          <span class="c">&copy; Rose for vases</span>
+          <a href="https://www.udg.org.uk/about/terms" class="a-c1"> Terms of Use</a>
+          <span class="s-c">/</span>
+          <a href="https://www.udg.org.uk/about/terms" class="a-c1">  Privacy Policy </a>
+          <span class="s-c">/</span>
+          <a href="https://www.udg.org.uk/about/terms" class="a-c1">  Cookie Policy </a>
+      </div>
+      <div class="c-d"> <span class="d">Website developed by</span>
+         <a href="https://www.linkedin.com/in/rana-ahmad-77b74a16b/" class="a-d">Rana Ahmed</a>
+      </div>
+  </div>
+  <div class="arch-last a-l-2"></div>
+ 
+  
+</footer>
+
+ 
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+
+</html>
